@@ -125,10 +125,45 @@ ol {
 
 .search-form__fieldset-title {
   font-size: 18px;
-  font-weight: 400;
-  font-family: Fira Sans Condensed;
+  font-weight: 400 ;
+  padding-bottom: 5px;
 
 }
+
+.title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 0.94;
+  text-transform: uppercase;
+
+}
+.content__accent {
+  opacity: 0.3;
+}
+
+.content__card-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title{
+  font-size: 30px;
+  font-family: Oswald;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description{
+  line-height: 0.9;
+  line-clamp: 1;
+}
+
+
+
 
 
 
