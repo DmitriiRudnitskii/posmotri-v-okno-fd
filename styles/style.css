@@ -18,7 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   align-items: center;
-  padding: 133px 30px;
+  justify-content: center;
 }
 
 h1,
@@ -59,15 +59,16 @@ ol {
   grid-template-areas:"result content__details";
   align-items: end;
   width: 100%;
-  height: 534px;
+  max-height: 534px;
   column-gap: 30px;
+  padding: 0 30px;
 }
 
 .result {
   grid-area: result;
    display: flex; 
   flex-direction: column;
-  
+  gap: 10px;
 } 
 
 .search-form {
@@ -81,9 +82,10 @@ ol {
 .content__list-container { 
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 298px;
-  width: 390px;
-  overflow: scroll;
+  width: 399px;
+  overflow-y: scroll;
   gap: 30px;
 }
 
@@ -99,30 +101,35 @@ ol {
   grid-area: content__details;
   width: 100%;
   height: 100%;
-  gap: 26px;
+  gap: 19px;
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  width: 100%;
+  height: 100%;
+  position: relative;
   
+}
+
+.result__video-container:hover {
+  cursor: pointer;
 }
 
 .result__video {
   object-fit: cover;
   width: 100%;
   height: 386px;
-  padding-bottom: 16px;
 }
 
 .content__video-card {
   display: flex;
   align-items: start;
+  justify-content: space-between;
 }
 
 .content__video-card-thumbnail {
   display: block;
-  width: 194px;
+  min-width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
@@ -133,6 +140,7 @@ ol {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  max-width: 196px;
 }
 
 .search-form__fieldset-title {
@@ -151,7 +159,7 @@ ol {
 
 }
 .content__accent {
-  opacity: 0.3;
+  color: #545050;
 }
 
 .content__card-link{
@@ -205,6 +213,7 @@ ol {
   background-color: transparent;
   width: 225px;
   appearance: none;
+  padding-left: 1px;
 }
 
 .search-form__textfield:focus {
@@ -239,6 +248,7 @@ ol {
 
 .search-form__label:has(.search-form__checkbox):hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button {
@@ -257,8 +267,8 @@ ol {
 }
 
 .more-button {
-  height: 34px;
-  width: 100%;
+  min-height: 34px;
+  max-width: 100%;
 }
 
 .button:focus {
@@ -277,6 +287,29 @@ ol {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
+
+.content__card-link_current > .content__video-card {
+  background-color: #545050;
+}
+
+.content__video-card-description-container:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__list-item {
+  padding: 0 3px;
+}
+
+.content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #fff;
+}
+
+
 
 
 
