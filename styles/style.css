@@ -181,6 +181,7 @@ ol {
   line-height: 0.9;
   line-clamp: 1;
 }
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
