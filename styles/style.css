@@ -86,7 +86,6 @@ ol {
   height: 298px;
   width: 399px;
   overflow-y: scroll;
-  gap: 30px;
 }
 
 .content__list {
@@ -101,7 +100,7 @@ ol {
   grid-area: content__details;
   width: 100%;
   height: 100%;
-  gap: 19px;
+  gap: 26px;
 }
 
 .result__video-container {
@@ -116,6 +115,7 @@ ol {
 }
 
 .result__video {
+  object-position: center;
   object-fit: cover;
   width: 100%;
   height: 386px;
@@ -151,7 +151,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
@@ -169,7 +169,7 @@ ol {
 
 .content__video-card-title{
   font-size: 30px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
@@ -200,6 +200,7 @@ ol {
   display: flex;
   width: fit-content;
   flex-direction: row;
+  align-items: center;
   gap: 5px;
 }
 
@@ -230,6 +231,7 @@ ol {
   width: 19px;
   height:19px;
   display: flex;
+  place-items: center;
 }
 
 .search-form__checkbox-list{
@@ -243,7 +245,7 @@ ol {
   background-color: #fff;
   width: 18px;
   height: 18px;
-  border: 2px solid #000
+  border: 1px solid #000
 
 }
 
@@ -290,6 +292,10 @@ ol {
 }
 
 .content__card-link_current > .content__video-card {
+  background-color: #545050;
+}
+
+.content__card-link:active {
   background-color: #545050;
 }
 
